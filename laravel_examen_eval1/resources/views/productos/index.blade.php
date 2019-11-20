@@ -15,6 +15,17 @@
       <th>Stock</th>
       <th>Tienda</th>      
     </tr>
+    @foreach($productos as $i)
+
+      <tr>
+        <td>{{$i->id}}</td>
+        <td>{{$i->name}}</td>
+        <td>{{$i->description}}</td>
+        <td>{{$i->price}}</td>
+        <td>{{$i->name}}</td>
+      </tr>
+
+    @endforeach
   </table>
 
 @endsection
